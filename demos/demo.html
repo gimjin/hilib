@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>simple</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+    <script type="text/javascript" src="../node_modules/hammerjs/hammer.js"></script>
+    <script type="text/javascript" src="../dist/hi-lib.js"></script>
+    <link rel="stylesheet" href="../dist/hi-lib.css">
+    <script type="text/javascript">
+      Vue.use(HiLib, {
+        debug: true
+      })
+      new Vue({
+        el:'#app',
+        template: `
+          <div>
+            <hi-lib />
+          </div>
+        `
+      })
+    </script>
+  </body>
+</html>
